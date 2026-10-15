@@ -1,5 +1,13 @@
 # think-like-codex
 
+## Evaluation status (2026-10-15)
+
+**Treat v0.1.2 as an experimental workflow policy, not a validated reasoning-efficiency improvement. Keeping it disabled on DSH session-format-v4 installations is recommended pending compatibility and behavior fixes.**
+
+A reproducible audit found a v4-incompatible reminder source, historical-task interference with new requests, an exploration budget that resets on each step, coarse repeated-failure grouping, and gaps in the mutation-tool gate. Some basic planning and goal/todo hooks behave as designed, but no controlled model-level experiment establishes better task success, lower token use, or shorter completion time.
+
+See [the evaluation, scope, and reproduction instructions](docs/EVALUATION-2026-10-15.md). The audit distinguishes observed implementation defects from efficiency hypotheses and does not claim that every task becomes slower or that workflow policies cannot help.
+
 English | [简体中文](./README.zh-CN.md)
 
 A Codex-inspired behavior policy and Profile Bundle for DeepSeek Harness (DSH).

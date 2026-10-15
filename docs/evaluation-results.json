@@ -1,0 +1,83 @@
+{
+  "source": "public index.js blob 2d86ea895a033e9829a7887b05c592c1af1cc242",
+  "date": "2026-10-15",
+  "method": "Offline deterministic hook tests of actual public source; no model calls, no causal task-efficiency A/B.",
+  "cases": [
+    {
+      "id": "simple_request",
+      "autoPlan": false
+    },
+    {
+      "id": "complex_request",
+      "autoPlan": true
+    },
+    {
+      "id": "explicit_no_plan",
+      "autoPlan": false
+    },
+    {
+      "id": "simple_followup_after_complex_history",
+      "autoPlan": true,
+      "classification": true
+    },
+    {
+      "id": "different_causes_same_error_code",
+      "notices": 1,
+      "source": {
+        "kind": "plugin",
+        "plugin": "think-like-codex",
+        "form": "notice",
+        "summary": "2 repeated failures / 连续 2 次同类失败"
+      }
+    },
+    {
+      "id": "failure_success_failure",
+      "notices": 0
+    },
+    {
+      "id": "thirteenth_distinct_plan_read",
+      "allowedBefore": 12,
+      "result": "deny"
+    },
+    {
+      "id": "budget_exit_tools",
+      "exitPlan": "allow",
+      "question": "allow"
+    },
+    {
+      "id": "goal_gate",
+      "write": "deny"
+    },
+    {
+      "id": "todo_gate",
+      "write": "deny"
+    },
+    {
+      "id": "goal_and_todo_present",
+      "write": "allow"
+    },
+    {
+      "id": "shell_mutation_gate",
+      "touch": "deny",
+      "powershellWrite": "allow",
+      "pythonWrite": "allow"
+    },
+    {
+      "id": "periodic_notice",
+      "source": {
+        "kind": "plugin",
+        "plugin": "think-like-codex",
+        "form": "notice",
+        "summary": "Step 12 convergence check / 第 12 步止损检查"
+      },
+      "chars": 761,
+      "policyChars": 7621,
+      "policyUtf8Bytes": 10821,
+      "hasEmpiricalEfficiencyMetric": false
+    },
+    {
+      "id": "fifteen_plan_reads_across_fifteen_steps",
+      "denied": 0
+    }
+  ]
+}
